@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:padding="24dp"
+              android:background="@color/white"
+              tools:context=".SetupActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bem-vindo(a)!"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vamos personalizar sua meta de hidratação."
+            android:gravity="center"
+            android:textColor="#555555"
+            android:layout_marginBottom="32dp"/>
+
+    <!-- MUDANÇA AQUI: Aplicando o novo estilo -->
+    <EditText
+            android:id="@+id/age_input"
+            style="@style/App.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sua idade"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+    <!-- MUDANÇA AQUI: Aplicando o novo estilo -->
+    <EditText
+            android:id="@+id/weight_input"
+            style="@style/App.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seu peso (kg)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="32dp"/>
+
+    <Button
+            android:id="@+id/calculate_button"
+            style="@style/App.Button.Blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular Meta e Iniciar"/>
+
+</LinearLayout>

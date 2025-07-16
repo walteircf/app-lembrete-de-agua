@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema base para o modo claro (Light Mode) -->
+    <style name="Base.Theme.LembreteDeAgua" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Cores primárias -->
+        <item name="colorPrimary">@color/blue</item>
+        <!-- Cor da barra de status no topo -->
+        <item name="android:statusBarColor">@color/blue_dark</item>
+        <!-- Cor de fundo principal do app -->
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- Estilo customizado para os botões azuis -->
+    <style name="App.Button.Blue" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- NOVO: Estilo para os campos de texto (EditText) -->
+    <style name="App.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:backgroundTint">@color/blue_dark</item>
+    </style>
+
+    <style name="Theme.LembreteDeAgua" parent="Base.Theme.LembreteDeAgua" />
+</resources>
